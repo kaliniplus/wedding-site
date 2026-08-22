@@ -4,6 +4,21 @@
 // https://script.google.com/macros/s/XXXXXXXXXXXXXXXXXXXXXXXX/exec
 const GOOGLE_SCRIPT_URL = "";
 
+// ===== Галерея пинов: вертикальный скролл мышью -> горизонтальный =====
+const pinGallery = document.querySelector(".pin-gallery");
+if (pinGallery) {
+  pinGallery.addEventListener(
+    "wheel",
+    (e) => {
+      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
+        e.preventDefault();
+        pinGallery.scrollLeft += e.deltaY;
+      }
+    },
+    { passive: false }
+  );
+}
+
 // ===== Появление секций при прокрутке =====
 const revealEls = document.querySelectorAll(".reveal");
 if ("IntersectionObserver" in window && revealEls.length) {
