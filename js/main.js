@@ -2,7 +2,7 @@
 // После деплоя Google Apps Script (см. google-apps-script/README-SETUP.md)
 // вставьте сюда URL веб-приложения — он выглядит как
 // https://script.google.com/macros/s/XXXXXXXXXXXXXXXXXXXXXXXX/exec
-const GOOGLE_SCRIPT_URL = "";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx1Hl1rJlbCPDWyuSA5DLKnP8MHxaWe6SMSiz5rbKz7yyXIUGag_xWNbsFmHwxJdMsFlg/exec";
 
 // ===== Галерея пинов: вертикальный скролл мышью -> горизонтальный =====
 const pinGallery = document.querySelector(".pin-gallery");
