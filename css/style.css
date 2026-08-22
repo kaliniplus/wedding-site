@@ -7,8 +7,8 @@
 }
 
 :root {
-  --sky-dark: #6F93B4;      /* тёмная полоса — было оливковым в референсе */
-  --sky-darker: #4F7699;    /* hero — чуть глубже для контраста с белым текстом */
+  --sky-dark: #ADCADC;      /* тёмная полоса (по названию — теперь светлая) */
+  --sky-darker: #ADCADC;    /* hero — тот же тон */
   --sky-deep: #2E4A6B;      /* акценты/текст на светлом */
   --cream: #F7F4EC;         /* светлая полоса — было кремовым в референсе */
   --white: #FFFFFF;
@@ -53,7 +53,7 @@ img { max-width: 100%; display: block; }
 }
 .band--dark {
   background: var(--sky-dark);
-  color: var(--white);
+  color: var(--ink);
 }
 .band--light {
   background: var(--cream);
@@ -139,7 +139,7 @@ img { max-width: 100%; display: block; }
   margin: 0 0 2px;
 }
 .hero__names .heart {
-  color: var(--white);
+  color: var(--sky-deep);
   font-size: 0.7em;
   vertical-align: middle;
   opacity: .85;
@@ -234,9 +234,9 @@ img { max-width: 100%; display: block; }
   display: flex;
   gap: 18px;
   padding: 22px 0;
-  border-top: 1px solid rgba(255,255,255,.25);
+  border-top: 1px solid rgba(46,74,107,.25);
 }
-.wishes__item:first-child { border-top: 1px solid rgba(255,255,255,.25); }
+.wishes__item:first-child { border-top: 1px solid rgba(46,74,107,.25); }
 .wishes__num {
   font-family: var(--font-display);
   font-weight: 600;
@@ -313,7 +313,7 @@ fieldset.field { border: 0; padding: 0; margin: 0; }
 input[type="text"], textarea {
   width: 100%;
   border: none;
-  border-bottom: 1px solid rgba(255,255,255,.5);
+  border-bottom: 1px solid rgba(46,74,107,.4);
   background: transparent;
   padding: 8px 2px;
   font-family: var(--font-body);
@@ -322,8 +322,8 @@ input[type="text"], textarea {
   outline: none;
   transition: border-color .2s ease;
 }
-input[type="text"]::placeholder, textarea::placeholder { color: rgba(255,255,255,.5); }
-input[type="text"]:focus, textarea:focus { border-color: var(--white); }
+input[type="text"]::placeholder, textarea::placeholder { color: rgba(62,58,54,.45); }
+input[type="text"]:focus, textarea:focus { border-color: var(--sky-deep); }
 
 .radio-row { display: flex; gap: 26px; }
 .radio, .check {
@@ -340,7 +340,7 @@ input[type="text"]:focus, textarea:focus { border-color: var(--white); }
   gap: 10px 16px;
 }
 input[type="radio"], input[type="checkbox"] {
-  accent-color: var(--white);
+  accent-color: var(--sky-deep);
   width: 16px;
   height: 16px;
 }
@@ -349,8 +349,8 @@ input[type="radio"], input[type="checkbox"] {
   align-self: center;
   margin-top: 8px;
   padding: 14px 46px;
-  background: var(--white);
-  color: var(--sky-deep);
+  background: var(--sky-deep);
+  color: var(--white);
   border: none;
   border-radius: 999px;
   font-family: var(--font-body);
