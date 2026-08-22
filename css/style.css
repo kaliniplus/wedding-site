@@ -139,7 +139,7 @@ img { max-width: 100%; display: block; }
   margin: 0 0 2px;
 }
 .hero__names .heart {
-  color: var(--sky-deep);
+  color: inherit;
   font-size: 0.7em;
   vertical-align: middle;
   opacity: .85;
