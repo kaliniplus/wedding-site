@@ -17,6 +17,15 @@ if (pinGallery) {
     },
     { passive: false }
   );
+
+  const pinHint = document.querySelector(".pin-gallery__hint");
+  const syncPinHint = () => {
+    if (!pinHint) return;
+    const atEnd = pinGallery.scrollLeft + pinGallery.clientWidth >= pinGallery.scrollWidth - 4;
+    pinHint.classList.toggle("is-hidden", atEnd);
+  };
+  pinGallery.addEventListener("scroll", syncPinHint, { passive: true });
+  syncPinHint();
 }
 
 // ===== Появление секций при прокрутке =====
