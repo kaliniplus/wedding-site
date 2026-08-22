@@ -197,6 +197,7 @@ img { max-width: 100%; display: block; }
   text-align: center;
 }
 .details__ornament { margin: 0 0 8px; opacity: .8; }
+.details__ornament-icon { width: 18px; height: 18px; color: inherit; }
 .details__card h3 {
   font-family: var(--font-display);
   font-weight: 600;
