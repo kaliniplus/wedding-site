@@ -292,24 +292,21 @@ img { max-width: 100%; display: block; }
 }
 
 /* ---------- ГАЛЕРЕЯ ПИНТЕРЕСТА ---------- */
-.pin-gallery-wrap { margin: 8px 0 4px; position: relative; }
+.pin-gallery-wrap { margin: 8px 0 4px; }
+.pin-gallery-row { display: flex; align-items: center; gap: 2px; }
 .pin-gallery__hint {
-  position: absolute;
-  top: 0;
-  bottom: 14px;
-  right: 0;
-  width: 56px;
+  flex: none;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  padding-right: 2px;
-  background: linear-gradient(to right, transparent, var(--cream) 65%);
+  justify-content: center;
+  width: 18px;
+  padding-bottom: 14px;
   pointer-events: none;
   transition: opacity .3s ease;
 }
 .pin-gallery__hint svg {
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
   color: var(--sky-deep);
   opacity: .7;
   animation: pin-hint-nudge 1.6s ease-in-out infinite;
@@ -323,6 +320,8 @@ img { max-width: 100%; display: block; }
   .pin-gallery__hint svg { animation: none; }
 }
 .pin-gallery {
+  flex: 1;
+  min-width: 0;
   display: flex;
   gap: 10px;
   overflow-x: auto;
